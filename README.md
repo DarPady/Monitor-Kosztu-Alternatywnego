@@ -1,11 +1,11 @@
 # MKA
 
- ## Spis treści
+ ## Table of Contents
 
 
  ---
 
-## O projekcie
+## About the Project
 
 
 ---
