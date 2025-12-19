@@ -14,6 +14,9 @@
  ---
 
 ## About the Project
+The project examines opportunity cost in the context of personal finance and behavioral economics, quantitatively presenting the real effects of established,, small consumption habits, such as daily spending on stimulants or small purchases. The application allows users to see how micro-financial decisions affect their long-term, cumulative investment potential, facilitating informed decision-making and better management of their own budget.
+
+The end product is an interactive web application in the form of a dashboard, distinguished by full personalization of tracked habits and conversion of daily expenses into the current value of potential investments. The aim of the project is not only to educate users about personal finance, but also to show the real impact of daily expenses on long-term investment potential.
 
 
 ---
@@ -50,10 +53,11 @@ Follow these steps to set up and run the application locally:
 ---
 
 ## License
-This project is licensed under the Freeware License. It may not be sold or modified in any way, such as by adding your own advertisement inside. It can only be distributed in its original, unchanged form.
+
 
 ---
 
-## Contact
+## Authors
+- 
 For questions or suggestions, feel free to reach out:
 - **GitHub Profile**: 
