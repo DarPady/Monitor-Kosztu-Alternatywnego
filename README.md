@@ -1,4 +1,4 @@
-# MKA 
+# OCM - Opportunity Cost Monitor
 
  ## Table of Contents
 - [About the Project](#about-the-project)
@@ -9,7 +9,7 @@
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+- [Authors](#authors)
 
  ---
 
@@ -58,6 +58,7 @@ Follow these steps to set up and run the application locally:
 ---
 
 ## Authors
-- 
 For questions or suggestions, feel free to reach out:
-- **GitHub Profile**: 
+- **GitHub Profile**: [DarPady](https://github.com/DarPady)
+                      [rutkowskaj](https://github.com/rutkowskaj)
+                      [KatarzynaZaniewska](https://github.com/KatarzynaZaniewska)
