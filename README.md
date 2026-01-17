@@ -25,9 +25,9 @@ The application offers the following key functionalities:
 
 - **Habit Tracking** – Definition and monitoring of recurring consumption habits with daily usage logging.
 
-- **Automatic Expense Calculation** – Real-time calculation of daily and cumulative costs based on historical prices.
+- **Currency & Commodity Data Integration** – Regular collection of exchange rates and market price data used as reference values for analytical calculations.
 
-- **Market Data Integration** – Periodic retrieval of stock market index data for analytical purposes.
+- **Opportunity Cost Simulation** – Estimation of the current value of spent money if it had been allocated to selected market instruments instead of being spent.
 
 - **Opportunity Cost Simulation** – Simulation of hypothetical investments showing the current value of spent money.
 
