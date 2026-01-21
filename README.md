@@ -29,12 +29,10 @@ Produktem końcowym jest interaktywna aplikacja webowa w formie pulpitu (dashboa
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
-|F-02|Wizualizacja danych historycznych| Aplikacja umożliwia użytkownikowi sprawdzenie zmienności cen kryptowalut we wskazanym okresie.|1|Funkcjonalne - Wizualizacja|
-|F-03|Generowanie prognozy| Po wybraniu kryptowaluty przez użytkownika, aplikacja wyświetli prognozę ceny tej kryptowaluty na następny dzień.|1| Funkcjonalne - Prognozowanie|
-|F-04|Zwizualizowanie prognozy| Użytkownik będzie miał możliwość zobaczenia na wykresie wygenerowanej wartości prognozy wraz z wyznaczonym dla niej przedziałem ufności.|1|Funkcjonalne - Wizualizacja|
-|F-05|Eksport wykresów|Użytkownik ma możliwość zapisania wykresów po ich wygenerowaniu.|2|Funkcjonalne - Eksport|
-|F-06|Czytelny interfejs|Korzystanie z aplikacji jest dla użytkownika intuicyjne; interfejs aplikacji jest czysty.|1|Niefunkcjonalne|
-|F-07|Czas oczekiwania|Czas oczekiwania na odpowiedź aplikacji jest krótki, prognoza pojawia się na ekranie w zaledwie kilka sekund po wysłaniu zapytania.|1|Niefunkcjonalne|
+|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
+|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
+|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
+
 
 (Priorytet: 1 - wymagane, 2 - przydatne, 3 - opcjonalne)
   
