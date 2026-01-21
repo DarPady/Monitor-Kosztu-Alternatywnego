@@ -27,7 +27,7 @@ Produktem końcowym jest interaktywna aplikacja webowa w formie pulpitu (dashboa
 
 |ID | NAZWA | OPIS | PRIORYTET | KATEGORIA |
 |---|-------|------|-----------|-----------|
-|MODUŁ 1: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)|-------|------|-----------|-----------|
+|MODUŁ 1: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)|
 |F-01|Wybór kryptowaluty| Użytkownik może wybrać kryptwalutę, dla której zostanie wykonana analiza.|1|Funkcjonalne - Dobór danych|
 |F-02|Wizualizacja danych historycznych| Aplikacja umożliwia użytkownikowi sprawdzenie zmienności cen kryptowalut we wskazanym okresie.|1|Funkcjonalne - Wizualizacja|
 |F-03|Generowanie prognozy| Po wybraniu kryptowaluty przez użytkownika, aplikacja wyświetli prognozę ceny tej kryptowaluty na następny dzień.|1| Funkcjonalne - Prognozowanie|
