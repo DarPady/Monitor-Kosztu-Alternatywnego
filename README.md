@@ -116,5 +116,14 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 ---
 
 ## Testy
+W projekcie przeprowadzono **testy akceptacyjne (manualne)**, które obejmowały:
+- rejestrację i logowanie użytkownika,
+- konfigurację nawyków/produktów (dodawanie wielu produktów, zmiana ceny z zachowaniem historii),
+- rejestrację dziennego zużycia oraz automatyczne wyliczanie kosztu,
+- pobieranie danych rynkowych (scraping), ich przetwarzanie i cykliczną aktualizację,
+- agregację wydatków oraz symulację inwestycyjną,
+- wymagania niefunkcjonalne: dostęp przez przeglądarkę, obsługa przez GUI oraz trwałe przechowywanie danych w bazie.
+
+Szczegółowe scenariusze i raport z testów: [testy_akceptacyjne](testy_akceptacyjne.pdf)
 
 ---
