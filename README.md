@@ -63,21 +63,21 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 |F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|1|
 |F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
 
-**MODUŁ 2: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+**MODUŁ 2: DZIENNIK KONSUMPCJI**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-05|Rejestracja zużycia| System musi umożliwiać użytkownikowi codzienne wprowadzenie ilości zużytego produktu (np. 1.5 sztuki) dla wybranej daty.|1|
 |F-06|Automatyczne obliczanie kosztu| Natychmiast po wprowadzeniu ilości, system musi obliczyć dzienny koszt (ilość × aktualna cena) i zapisać go w bazie danych.|1|
 
-**MODUŁ 3: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+**MODUŁ 3: POZYSKANIE DANYCH RYNKOWYCH (WEB SCRAPING)**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
-|F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
-|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
-|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
-|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
+|F-07|Połączenie z Bankier.pl| System musi cyklicznie łączyć się ze stroną Bankier.pl, imitując przeglądarkę, aby uniknąć blokady i pobrać pełny kod źródłowy HTML.|1|
+|F-08|Ekstrakcja notowań indeksu| System musi wyszukać  w pobranym kodzie HTML aktualną wartość wybranego indeksu giełdowego (np. WIG20 lub S&P500), wraz ze zmianą procentową i pobrać te wartości wraz z timestampem. |1|
+|F-09|Czyszczenie i konwersja danych| USystem musi oczyścić pobrane z HTML dane (usunięcie spacji, zamiana przecinków na kropki) i przekonwertować je na format liczbowy |1|
+|F-10|Cykliczna aktualizacja| Proces scrapingu musi być uruchamiany automatycznie (codziennie o 09:00)  przy użyciu harmonogramu zadań (APScheduler).|1|
 
-** MODUŁ 4: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+**MODUŁ 4: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
