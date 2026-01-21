@@ -56,44 +56,44 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 ### Wymagania funkcjonalne
 
 **MODUŁ 1: KONFIGURACJA NAWYKÓW**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|-----|-------|------|-----------|
+| ID | NAZWA | OPIS | PRIORYTET | 
+|----|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
 |F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
 |F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|1|
 |F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
 
 **MODUŁ 2: DZIENNIK KONSUMPCJI**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|-----|-------|------|-----------|
+| ID | NAZWA | OPIS | PRIORYTET | 
+|----|-------|------|-----------|
 |F-05|Rejestracja zużycia| System musi umożliwiać użytkownikowi codzienne wprowadzenie ilości zużytego produktu (np. 1.5 sztuki) dla wybranej daty.|1|
 |F-06|Automatyczne obliczanie kosztu| Natychmiast po wprowadzeniu ilości, system musi obliczyć dzienny koszt (ilość × aktualna cena) i zapisać go w bazie danych.|1|
 
 **MODUŁ 3: POZYSKANIE DANYCH RYNKOWYCH**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|-----|-------|------|-----------|
+| ID | NAZWA | OPIS | PRIORYTET | 
+|----|-------|------|-----------|
 |F-07|Połączenie z Bankier.pl| System musi cyklicznie łączyć się ze stroną Bankier.pl, imitując przeglądarkę, aby uniknąć blokady i pobrać pełny kod źródłowy HTML.|1|
 |F-08|Ekstrakcja notowań indeksu| System musi wyszukać w pobranym kodzie HTML aktualną wartość wybranego notowania giełdowego, wraz ze zmianą procentową i pobrać te wartości wraz z timestampem. |1|
 |F-09|Czyszczenie i konwersja danych| System musi oczyścić pobrane z HTML dane (usunięcie spacji, zamiana przecinków na kropki) i przekonwertować je na format liczbowy. |1|
 |F-10|Cykliczna aktualizacja| Proces scrapingu musi być uruchamiany automatycznie przy użyciu harmonogramu zadań.|2|
 
 **MODUŁ 4: ANALIZA DANYCH**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|-----|-------|------|-----------|
+| ID | NAZWA | OPIS | PRIORYTET | 
+|----|-------|------|-----------|
 |F-11|Obliczanie sumy wydatków| System musi agregować dane o wydatkach w danym dniu i łączną ich sumę.|1|
 |F-12|Symulacja inwestycyjna| System sprawdza, ile dziś byłyby warte wydane pieniądze, gdyby były na bieżąco inwestowane w wybrane walory.|1|
 |F-13|Konfiguracja portfela| System umożliwia ustalenie wag dla każdego z sześciu walorów, jednocześnie sprawdzając czy suma wynosi 100%.|2|
 |F-14|Wykres inwestycyjny| Wyświetlana jest zmiana wartości portfela w czasie.|3|
 
 **MODUŁ 6: PROFIL UŻYTKOWNIKA**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|-----|-------|------|-----------|
+| ID | NAZWA | OPIS | PRIORYTET | 
+|----|-------|------|-----------|
 |F-15|Rejestracja i logowanie| Po utworzeniu konta system zapisuje wprowadzone przez użytkownika dane i przypisuje je do jego profilu.|1|
 
 ### Wymagania niefunkcjonalne
 
-|ID | NAZWA | OPIS | PRIORYTET | 
-|-----|-------|------|-----------|
+| ID | NAZWA | OPIS | PRIORYTET | 
+|----|-------|------|-----------|
 |NF-01|Dostęp do aplikacji| System musi być dostępny przez przeglądarkę internetową (aplikacja webowa) i nie wymagać instalacji.|1|
 |NF-02|Interfejs użytkownika| System nie wymaga obsługi przez wiersz poleceń; wszystkie funkcje dostępne dla użytkownika są dostępne przez GUI.|1|
 |NF-03|Dane historyczne| Dane użytkowników i historia notowań muszą być przechowywane w bazie danych.|1|
