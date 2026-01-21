@@ -55,7 +55,21 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 
 ### Wymagania funkcjonalne
 
-**1. MODUŁ 1: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+** MODUŁ 1: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+|ID | NAZWA | OPIS | PRIORYTET | 
+|---|-------|------|-----------|
+|F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
+|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
+|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|1|
+|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
+
+** MODUŁ 2: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+|ID | NAZWA | OPIS | PRIORYTET | 
+|---|-------|------|-----------|
+|F-05|Rejestracja zużycia| System musi umożliwiać użytkownikowi codzienne wprowadzenie ilości zużytego produktu (np. 1.5 sztuki) dla wybranej daty.|1|
+|F-06|Automatyczne obliczanie kosztu| Natychmiast po wprowadzeniu ilości, system musi obliczyć dzienny koszt (ilość × aktualna cena) i zapisać go w bazie danych.|1|
+
+** MODUŁ 3: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
@@ -63,7 +77,7 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 |F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
 |F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
 
-**2. MODUŁ 2: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+** MODUŁ 4: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
@@ -71,7 +85,7 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 |F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
 |F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
 
-**3. MODUŁ 3: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+** MODUŁ 5: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
@@ -79,7 +93,7 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 |F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
 |F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
 
-**4. MODUŁ 4: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+** MODUŁ 6: ZARZĄDZANIE UŻYTKOWNIKIEM**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
@@ -87,23 +101,7 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 |F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
 |F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
 
-**5. MODUŁ 5: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|---|-------|------|-----------|
-|F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
-|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
-|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
-|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
-
-**6. MODUŁ 6: ZARZĄDZANIE UŻYTKOWNIKIEM**
-|ID | NAZWA | OPIS | PRIORYTET | 
-|---|-------|------|-----------|
-|F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
-|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
-|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
-|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
-
-### Wymagania niefunkcjonalne
+** Wymagania niefunkcjonalne **
 
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
