@@ -13,9 +13,10 @@
 ---
 
 ## Charakterystyka oprogramowania
-Projekt bada koszt alternatywny w kontekście osobistych finansów i ekonomii behawioralnej, ilościowo przedstawiając realne skutki utrwalonych, drobnych nawyków konsumpcyjnych, takich jak codzienne wydatki na używki czy drobne przyjemności. 
+Projekt nosi nazwę MKA - Monitor Kosztu Alternatywnego
 
-Produktem końcowym jest interaktywna aplikacja webowa, wyróżniająca się pełną personalizacją śledzonych nawyków oraz przeliczaniem codziennych wydatków na aktualną wartość potencjalnych inwestycji. Celem projektu jest nie tylko edukacja użytkowników w zakresie finansów osobistych i zarządzania własnym budżetem, ale także pokazanie realnego wpływu codziennych wydatków na długoterminowy potencjał inwestycyjny.
+Celem projektu jest analiza kosztu alternatywnego w kontekście osobistych finansów i ekonomii behawioralnej, ilościowo przedstawiając realne skutki utrwalonych, drobnych nawyków konsumpcyjnych, takich jak codzienne wydatki na używki czy inne przyjemności.
+Produktem końcowym jest interaktywna aplikacja webowa, posiadająca funkcję śledzenia nawyków oraz przeliczaniem codziennych wydatków na aktualną wartość potencjalnych inwestycji. Celem projektu jest nie tylko edukacja użytkowników w zakresie finansów osobistych i zarządzania własnym budżetem, ale także pokazanie realnego wpływu codziennych wydatków na długoterminowy potencjał inwestycyjny.
 
 
 ---
@@ -41,7 +42,6 @@ Treść licencji: https://opensource.org/license/mit/
 
 ### Autorzy
 Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
-
 **Profil  GitHub**:
 * Daria Padytel - [DarPady](https://github.com/DarPady)
 * Julia Rutkowska - [rutkowskaj](https://github.com/rutkowskaj)
