@@ -8,7 +8,7 @@
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
-- [License](#license)
+- [Prawa  autorskie](#prawa-autorskie)
 - [Authorzy](#authorzy)
 
 ---
@@ -111,14 +111,20 @@ Produktem końcowym jest interaktywna aplikacja webowa w formie pulpitu (dashboa
 
 ---
 
-## Prawa  autorskie
-**Monitor Kosztu Alternatywnego (MKA)** to projekt edukacyjny opracowany w ramach kursu inżynierii oprogramowania na Uniwersytecie Gdańskim.
+## Licencja
 
-Oprogramowanie jest dostępne bezpłatnie i może być pobierane, używane i modyfikowane wyłącznie **w celach edukacyjnych i osobistych.** Wszelkie wykorzystanie komercyjne jest surowo zabronione, w tym sprzedaż oprogramowania, czerpanie zysków z jego dystrybucji lub włączanie go do płatnych pakietów oprogramowania. Aplikacja może być dystrybuowana wyłącznie w bezpłatnej, niekomercyjnej formie.
+Projekt udostępniamy na licencji MIT.
 
-Aplikacja pobiera dane rynkowe z serwisu **Bankier.pl** w celach analitycznych. Wszelkie prawa do danych rynkowych należą do ich odpowiednich dostawców. Autor nie rości sobie prawa własności do pobranych danych i udostępnia jedynie narzędzie do ich automatycznego agregowania w celu analizy osobistej. Wszelkie komercyjne wykorzystanie pobranych danych może wymagać oddzielnego zezwolenia od dostawcy danych.
+Licencja MIT jest jedną z najprostszych i najbardziej liberalnych licencji otwartego oprogramowania. Oznacza to, że dozwolone jest:
+* korzystanie z projektu prywatnie i komercyjnie,
+* kopiowanie i rozpowszechnianie kodu,
+* modyfikowanie go i tworzenie na jego bazie własne rozwiązania,
+* publikowanie własnych wersji i łączenie tego kodu z innym oprogramowaniem.
 
-Autor nie gwarantuje, że oprogramowanie jest wolne od błędów i nie ponosi odpowiedzialności za jakiekolwiek szkody lub decyzje inwestycyjne podjęte na podstawie wyników lub symulacji wygenerowanych przez aplikację.
+Jedyny kluczowy wymóg to zachowanie informacji o prawach autorskich i licencji w kopiach lub istotnych częściach oprogramowania.
+Projekt jest dostarczany „as is”. Autorzy nie ponoszą odpowiedzialności za szkody wynikłe z używania oprogramowania.
+
+Wybrałyśmy licencję MIT, ponieważ chcemy, żeby z projektu dało się łatwo korzystać -w pracach badawczych, innych projektach i nawet komercyjnie.  Nie zależy nam na stawianiu dodatkowych barier: jeśli ktoś chce utworzyć fork, coś poprawić albo rozwinąć ten kod po swojemu, ma do tego pełne przyzwolenie
 
 
 ---
