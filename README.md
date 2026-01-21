@@ -2,8 +2,7 @@
 
  ## Table of Contents
 - [Charakterystyka oprogramowania](#charakterystyk-oprogramowania)
-- [Licencja](#licencja)
-- [Authorzy](#authorzy)
+- [Prawa  autorskie](#Prawa-autorskie)
 - [Specyfikacja wymagań](#specyfikacja-wymagań)
 - [Architektura systemu/oprogramowania](#architektura-systemu/oprogramowania)
 - [Instalacja](#instalacja)
@@ -20,7 +19,15 @@ Produktem końcowym jest interaktywna aplikacja webowa w formie pulpitu (dashboa
 
 
 ---
-## Licencja
+## Prawa  autorskie
+
+### Authorzy
+Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
+- **Profil  GitHub**: Daria Padytel - [DarPady](https://github.com/DarPady)
+                      Julia Rutkowska - [rutkowskaj](https://github.com/rutkowskaj)
+                      Katarzyna Zaniewska - [KatarzynaZaniewska](https://github.com/KatarzynaZaniewska)
+
+### Licencja
 
 Projekt udostępniamy na licencji **MIT**.
 
@@ -34,15 +41,6 @@ Jedyny kluczowy wymóg to zachowanie informacji o prawach autorskich i licencji 
 Projekt jest dostarczany „as is”. Autorzy nie ponoszą odpowiedzialności za szkody wynikłe z używania oprogramowania.
 
 Wybrałyśmy licencję MIT, ponieważ chcemy, żeby z projektu dało się łatwo korzystać -w pracach badawczych, innych projektach i nawet komercyjnie.  Nie zależy nam na stawianiu dodatkowych barier: jeśli ktoś chce utworzyć fork, coś poprawić albo rozwinąć ten kod po swojemu, ma do tego pełne przyzwolenie
-
-
----
-
-## Authorzy
-Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
-- **Profil  GitHub**: Daria Padytel - [DarPady](https://github.com/DarPady)
-                      Julia Rutkowska - [rutkowskaj](https://github.com/rutkowskaj)
-                      Katarzyna Zaniewska - [KatarzynaZaniewska](https://github.com/KatarzynaZaniewska)
 
 ---
 
