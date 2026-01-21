@@ -1,4 +1,4 @@
-# Monitor Kosztu Alternatywnego - MKA
+# Monitor Kosztu Alternatywnego (MKA)
 
  ## Spis treści
 - [Charakterystyka oprogramowania](#charakterystyka-oprogramowania)
