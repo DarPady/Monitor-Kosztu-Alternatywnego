@@ -73,19 +73,18 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-07|Połączenie z Bankier.pl| System musi cyklicznie łączyć się ze stroną Bankier.pl, imitując przeglądarkę, aby uniknąć blokady i pobrać pełny kod źródłowy HTML.|1|
-|F-08|Ekstrakcja notowań indeksu| System musi wyszukać  w pobranym kodzie HTML aktualną wartość wybranego indeksu giełdowego (np. WIG20 lub S&P500), wraz ze zmianą procentową i pobrać te wartości wraz z timestampem. |1|
-|F-09|Czyszczenie i konwersja danych| System musi oczyścić pobrane z HTML dane (usunięcie spacji, zamiana przecinków na kropki) i przekonwertować je na format liczbowy |1|
-|F-10|Cykliczna aktualizacja| Proces scrapingu musi być uruchamiany automatycznie (codziennie o 09:00)  przy użyciu harmonogramu zadań (APScheduler).|1|
+|F-08|Ekstrakcja notowań indeksu| System musi wyszukać w pobranym kodzie HTML aktualną wartość wybranego notowania giełdowego, wraz ze zmianą procentową i pobrać te wartości wraz z timestampem. |1|
+|F-09|Czyszczenie i konwersja danych| System musi oczyścić pobrane z HTML dane (usunięcie spacji, zamiana przecinków na kropki) i przekonwertować je na format liczbowy. |1|
+|F-10|Cykliczna aktualizacja| Proces scrapingu musi być uruchamiany automatycznie przy użyciu harmonogramu zadań.|2|
 
-**MODUŁ 4: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+**MODUŁ 4: SILNIK ANALITYCZNY I SYMULATOR**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
-|F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
-|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
-|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|2|
-|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
+|F-11|Obliczanie sumy wydatków| System musi agregować dane o wydatkach w zadanym okresie (dzień, tydzień, miesiąc, od początku).|1|
+|F-12|Analiza trendu konsumpcji| System musi obliczać średnie tempo zmian (np. średnia ruchoma z ostatnich 7 dni), aby wskazać, czy użytkownik ogranicza, czy zwiększa konsumpcję.|2|
+|F-13|Symulacja Inwestycyjna| System sprawdza, ile dziś byłyby warte wydane pieniądze, gdyby zostały zainwestowane w wybrany fundusz. Każdego dnia zamienia wydaną kwotę na jednostki funduszu po kursie z danego dnia, a następnie liczy, ile te jednostki są warte obecnie.|1|
 
-** MODUŁ 5: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
+**MODUŁ 5: KONFIGURACJA NAWYKÓW (UŻYTKOWNIK)**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
 |F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
