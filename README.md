@@ -43,6 +43,7 @@ Treść licencji: https://opensource.org/license/mit/
 
 ### Autorzy
 Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
+
 **Profil  GitHub**:
 * Daria Padytel - [DarPady](https://github.com/DarPady)
 * Julia Rutkowska - [rutkowskaj](https://github.com/rutkowskaj)
