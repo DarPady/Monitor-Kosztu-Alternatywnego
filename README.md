@@ -88,7 +88,7 @@ Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami:
 **MODUŁ 6: PROFIL UŻYTKOWNIKA**
 |ID | NAZWA | OPIS | PRIORYTET | 
 |---|-------|------|-----------|
-|F-15|Rejestracja i logowanie| Po założeniu konta dane wprowadzane przez użytkownika są zapisywane.|1|
+|F-15|Rejestracja i logowanie| Po utworzeniu konta system zapisuje wprowadzone przez użytkownika dane i przypisuje je do jego profilu.|1|
 
 **Wymagania niefunkcjonalne**
 |ID | NAZWA | OPIS | PRIORYTET | 
