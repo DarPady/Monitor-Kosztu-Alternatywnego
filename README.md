@@ -120,7 +120,7 @@ Architektura rozwoju
 ## Instalacja
 
 ### Wymagania wstępne
-1. Python 3.x (rekomendowane 3.11)
+1. Python 3.x (rekomendowane 3.11+)
 2. Narzędzie do tworzenia środowisk wirtualnych (np. venv lub virtualenv)
 3. Dostęp do internetu (pobieranie notowań z Bankier.pl)
 
