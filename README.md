@@ -17,7 +17,7 @@ Projekt nosi nazwę MKA - Monitor Kosztu Alternatywnego
 
 Celem projektu jest analiza kosztu alternatywnego w kontekście osobistych finansów i ekonomii behawioralnej, ilościowo przedstawiając realne skutki utrwalonych, drobnych nawyków konsumpcyjnych, takich jak codzienne wydatki na używki czy inne przyjemności.
 
-Produktem końcowym jest interaktywna aplikacja webowa, posiadająca funkcję śledzenia nawyków oraz przeliczaniem codziennych wydatków na aktualną wartość potencjalnych inwestycji. Celem projektu jest nie tylko edukacja użytkowników w zakresie finansów osobistych i zarządzania własnym budżetem, ale także pokazanie realnego wpływu codziennych wydatków na długoterminowy potencjał inwestycyjny.
+Produktem końcowym jest interaktywna aplikacja webowa, posiadająca funkcję śledzenia nawyków oraz przeliczaniem codziennych wydatków na aktualną wartość potencjalnych inwestycji. Celem projektu jest nie tylko edukacja użytkowników w zakresie finansów osobistych i zarządzania własnym budżetem, ale także pokazanie realnego wpływu codziennych wydatków na długoterminowy potencjał inwestycyjny. Zgromadzone oszczędności są następnie inwestowane automatycznie zgodnie z ustawionym podziałem procentowym i aktualnymi notowaniami – proces ten uruchamia się codziennie o 17:15, a dodatkowo użytkownik może w dowolnym momencie przeprowadzić inwestycję ręcznie.
 
 
 ---
