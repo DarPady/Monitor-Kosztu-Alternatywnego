@@ -151,7 +151,9 @@ Architektura rozwoju
 
 4. Uruchom serwer deweloperski:
    ```bash
-   python .\Project\app.py
+   python3 Project/app.py        # macOS / Linux
+   
+   python .\Project\app.py       # Windows
    ```
 
 5. Otwórz aplikację w przeglądarce:
