@@ -1,0 +1,43 @@
+{% extends "base.html" %}{% block content %}
+
+<div class="card"><h2 class="h2">Dodaj produkt</h2>
+<form method="post" action="{{ url_for('products_add') }}"><div class="row c mt">
+<input class="inp" name="name" placeholder="Nazwa" required>
+<input class="inp" name="unit" placeholder="Jednostka" required>
+<input class="inp" name="price" placeholder="Cena" required>
+<button class="btn" type="submit">Dodaj</button>
+</div></form></div>
+
+<div class="card"><h2 class="h2">Śledzone produkty</h2>
+<div class="chart mt"><table><thead><tr><th>Nazwa</th><th>Jednostka</th><th>Cena</th><th>Akcje</th></tr></thead><tbody>
+{% if products %}{% for p in products %}
+<tr>
+<td><strong>{{ p.name }}</strong></td><td>{{ p.unit }}</td><td>{{ '%.2f'|format(p.price) }} zł</td>
+<td>
+  <div class="row c">
+    <form method="post" action="{{ url_for('products_update', pid=p.id) }}" class="row c">
+      <input class="inp" name="price" placeholder="Nowa cena" required>
+      <button class="btn" type="submit">Aktualizuj</button>
+    </form>
+    <form method="post" action="{{ url_for('products_delete', pid=p.id) }}">
+      <button class="btn g" type="submit">Usuń</button>
+    </form>
+  </div>
+  <form method="post" action="{{ url_for('products_attach', pid=p.id) }}" class="row c mt">
+    <input class="inp" type="date" name="save_day" value="{{ selected_day.isoformat() }}" max="{{ today.isoformat() }}" required>
+    <input class="inp" name="quantity" placeholder="Ilość" required>
+    <button class="btn" type="submit">Dołącz</button>
+  </form>
+</td>
+</tr>
+{% endfor %}{% else %}<tr><td colspan="4">Brak produktów</td></tr>{% endif %}
+</tbody></table></div></div>
+
+<div class="card"><h2 class="h2">Suma wydatków: {{ '%.2f'|format(total_all) }} zł</h2>
+<div class="chart mt"><table><thead><tr><th>Dzień</th><th>Suma</th></tr></thead><tbody>
+{% if savings_days %}{% for d in savings_days %}
+<tr><td>{{ d.day }}</td><td>{{ '%.2f'|format(d.total) }} zł</td></tr>
+{% endfor %}{% else %}<tr><td colspan="2">Brak danych</td></tr>{% endif %}
+</tbody></table></div></div>
+
+{% endblock %}

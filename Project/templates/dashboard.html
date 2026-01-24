@@ -1,0 +1,42 @@
+{% extends "base.html" %}{% block content %}
+
+<div class="card">
+  <h2 class="h2">Portfel - {{ last_value }} zł</h2>
+
+  <form method="get" action="{{ url_for('dashboard') }}" class="row c mt">
+    <input class="inp" type="date" name="date_from" value="{{ date_from }}" max="{{ today }}">
+    <input class="inp" type="date" name="date_to" value="{{ date_to }}" max="{{ today }}">
+    <button class="btn btn-lite" type="submit">Pokaż</button>
+    <a class="btn g btn-lite" href="{{ url_for('dashboard', date_from=presets['7']['from'], date_to=presets['7']['to']) }}">7 dni</a>
+    <a class="btn g btn-lite" href="{{ url_for('dashboard', date_from=presets['14']['from'], date_to=presets['14']['to']) }}">14 dni</a>
+    <a class="btn g btn-lite" href="{{ url_for('dashboard', date_from=presets['30']['from'], date_to=presets['30']['to']) }}">30 dni</a>
+    <a class="btn g btn-lite" href="{{ url_for('dashboard') }}">Wyczyść</a>
+  </form>
+
+  {% if svg_value %}<div class="chart mt">{{ svg_value|safe }}</div>{% else %}<div class="muted mt">Brak danych.</div>{% endif %}
+</div>
+
+<div class="card">
+  <div class="row b">
+    <h2 class="h2">Historia inwestycji</h2>
+    <form method="post" action="{{ url_for('dashboard_catchup') }}">
+      <button class="btn" type="submit" {% if pending_count==0 %}disabled{% endif %}>Inwestuj{% if pending_count and pending_count>0 %} ({{ pending_count }}){% endif %}</button>
+    </form>
+  </div>
+
+  <div class="chart mt">
+    <table><thead><tr><th>Data</th><th>Instrument</th><th>Kwota</th><th>Cena</th><th>Ilość</th></tr></thead><tbody>
+      {% if lots %}{% for lot in lots %}
+        <tr>
+          <td>{{ lot.created_at }}</td>
+          <td>{{ lot.instrument }}</td>
+          <td>{{ '%.2f'|format(lot.amount) }} zł</td>
+          <td>{{ '%.2f'|format(lot.price) }}</td>
+          <td>{{ '%.6f'|format(lot.units) }}</td>
+        </tr>
+      {% endfor %}{% else %}<tr><td colspan="5">Brak danych</td></tr>{% endif %}
+    </tbody></table>
+  </div>
+</div>
+
+{% endblock %}

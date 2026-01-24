@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block content %}
+<div class="card"><h2 class="h2">Notowania</h2>
+<div class="chart mt"><table><thead><tr><th>Nazwa</th><th>Wartość</th><th>Zmiana %</th></tr></thead><tbody>
+{% for r in rows %}<tr><td><strong>{{ r["Nazwa"] }}</strong></td><td>{{ r["Wartość"] }}</td><td>{{ r["Zmiana"] }}</td></tr>{% endfor %}
+</tbody></table></div></div>
+{% endblock %}

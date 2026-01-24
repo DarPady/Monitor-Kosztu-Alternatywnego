@@ -1,0 +1,33 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MKA Simple</title>
+<style>
+:root{--bg:#1f2937;--top:#111827;--s:#374151;--b:#6b7280;--soft:rgba(209,213,219,.35);--t:#f9fafb;--m:#d1d5db;--btn:#4b5563;--btnh:#6b7280;--r:14px}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--t)}
+.container{max-width:1100px;margin:0 auto;padding:24px}.h2{margin:0;font-size:26px;font-weight:900}
+.top{position:sticky;top:0;z-index:50;background:var(--top);border-bottom:1px solid rgba(255,255,255,.08)}
+.inner{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.b{justify-content:space-between}.c{justify-content:center}
+.pill{padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);font-weight:900;font-size:14px;letter-spacing:.4px;color:#fff;text-decoration:none;line-height:1}
+.pill:hover{background:rgba(255,255,255,.18)}.hello{font-size:15px;font-weight:800;white-space:nowrap;opacity:.95}
+.nav a{color:#fff;text-decoration:none;padding:7px 10px;border-radius:10px;opacity:.95;white-space:nowrap}.nav a:hover{background:rgba(255,255,255,.12)}
+.card{background:var(--s);border:1px solid var(--b);border-radius:var(--r);padding:16px;margin:16px 0}
+.inp{padding:10px 11px;border-radius:10px;border:1px solid rgba(209,213,219,.6);background:#4b5563;color:var(--t)}
+.btn{padding:10px 14px;border-radius:12px;border:1px solid rgba(249,250,251,.9);background:var(--btn);color:var(--t);font-weight:900;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
+.btn:hover{background:var(--btnh)}.g{border-color:rgba(249,250,251,.35)}.btn:disabled{opacity:.6;cursor:not-allowed}
+.btn-lite{font-weight:600}
+.muted{color:var(--m)}.mt{margin-top:12px}
+table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--b);border-radius:12px;overflow:hidden;background:var(--s)}
+th,td{padding:14px;font-size:16px;text-align:center;border-bottom:1px solid var(--soft)}th{background:#4b5563;font-weight:900}
+tbody tr:nth-child(even){background:#3f4a5a}tbody tr:hover{background:#4b5563}
+.chart{overflow-x:auto}.chart svg{width:100%!important;height:auto!important;display:block;margin:0 auto}
+.flash{padding:10px 12px;border:1px solid rgba(249,250,251,.2);border-radius:12px;background:rgba(255,255,255,.06);margin:12px 0}
+</style></head><body>
+<div class="top"><div class="inner">
+<div class="row"><a class="pill" href="{{ url_for('home') }}">MKA</a>{% if current_user.is_authenticated %}<span class="hello">Witaj, {{ current_user.username }}</span>{% endif %}</div>
+<div class="row nav">{% if current_user.is_authenticated %}
+<a href="{{ url_for('profile') }}">Profil</a><a href="{{ url_for('products') }}">Produkty</a><a href="{{ url_for('dashboard') }}">Inwestycje</a><a href="{{ url_for('logout') }}">Wyloguj</a>
+{% else %}<a href="{{ url_for('login') }}">Logowanie</a><a href="{{ url_for('register') }}">Rejestracja</a>{% endif %}</div>
+</div></div>
+<div class="container">
+{% with msgs=get_flashed_messages() %}{% if msgs %}{% for m in msgs %}<div class="flash">{{ m }}</div>{% endfor %}{% endif %}{% endwith %}
+{% block content %}{% endblock %}
+</div></body></html>

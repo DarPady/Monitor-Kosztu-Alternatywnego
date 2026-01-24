@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% block content %}
+
+<div class="card"><h2 class="h2">Profil</h2>
+<div><strong>Username:</strong> {{ current_user.username }}<div class="muted mt"><strong>Email:</strong> {{ current_user.email }}</div></div></div>
+
+<div class="card"><h2 class="h2">Ustawienia inwestycji</h2>
+<form method="post" action="{{ url_for('profile_save') }}">
+<div class="chart mt"><table><thead><tr><th>Instrument</th><th>Procent (%)</th></tr></thead><tbody>
+{% for k in alloc_keys %}<tr><td><strong>{{ k }}</strong></td><td><input class="inp a" name="alloc_{{ k }}" value="{{ alloc_map.get(k,'') }}" inputmode="decimal" placeholder="0,00"></td></tr>{% endfor %}
+</tbody></table></div>
+<div class="row c mt"><div id="sb" class="p2">Suma: <span id="ss">0,00</span>%</div></div>
+<div class="row c mt"><button id="sv" class="btn" type="submit">Zapisz</button></div>
+</form></div>
+
+<script>
+(()=>{const I=[...document.querySelectorAll(".a")],S=document.getElementById("ss"),B=document.getElementById("sb"),V=document.getElementById("sv");
+const p=s=>{s=(s||"").trim();if(!s)return 0;const n=Number(s.replace(/\s+/g,"").replace(",", "."));return Number.isFinite(n)?n:0};
+const f=n=>(Math.round(n*100)/100).toFixed(2).replace(".",",");
+const u=()=>{const sum=Math.round(I.reduce((a,i)=>a+p(i.value),0)*100)/100;S.textContent=f(sum);const ok=Math.abs(sum-100)<1e-6;B.dataset.ok=ok?"1":"0";V.disabled=!ok};
+I.forEach(i=>i.addEventListener("input",u));u();})();
+</script>
+
+{% endblock %}
