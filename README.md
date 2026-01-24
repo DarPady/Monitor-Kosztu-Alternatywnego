@@ -108,11 +108,13 @@ Architektura rozwoju
 
 | Technologia | Przeznaczenie | Nr wersji |
 |----|-------|------|
-|beautifulsoup4||4.14.3|
-|Flask||3.1.2|
-|Flask-Login||0.6.3|
-|Flask-SQLAlchemy||3.1.1|
-|requests||2.32.5|
+|Python|Język programowania|3.13.11|
+|GitHub|Hosting repozytorium|-|
+|Biblioteka "beautifulsoup4"|Parsowanie dokumentów HTML/XML|4.14.3|
+|Biblioteka "Flask"|Tworzy aplikacje internetową i obsługuje żądań HTTP.|3.1.2|
+|Biblioteka "Flask-Login"|Obsługa logowania|0.6.3|
+|Biblioteka "Flask-SQLAlchemy"|Obsługa bazy danych|3.1.1|
+|Biblioteka "requests"|Zapytania HTTP|2.32.5|
 
     
 ---
