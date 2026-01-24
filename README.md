@@ -110,6 +110,7 @@ Architektura rozwoju
 |----|-------|------|
 |Python|Język programowania|3.13.11|
 |GitHub|Hosting repozytorium|-|
+|Git|Kontrola wersji|2.52|
 |Biblioteka "beautifulsoup4"|Parsowanie dokumentów HTML/XML|4.14.3|
 |Biblioteka "Flask"|Tworzy aplikacje internetową i obsługuje żądań HTTP.|3.1.2|
 |Biblioteka "Flask-Login"|Obsługa logowania|0.6.3|
