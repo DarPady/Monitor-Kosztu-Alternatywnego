@@ -109,7 +109,7 @@ Architektura rozwoju
 | Technologia | Przeznaczenie | Nr wersji |
 |----|-------|------|
 |Python|Język programowania|3.13.11|
-|PyCharm||2023.3.4|
+|PyCharm|Środowisko developerskie|2023.3.4|
 |GitHub|Hosting repozytorium|-|
 |Git|Kontrola wersji|2.52|
 |Biblioteka "beautifulsoup4"|Parsowanie dokumentów HTML/XML|4.14.3|
