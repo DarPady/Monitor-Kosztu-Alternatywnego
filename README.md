@@ -137,8 +137,11 @@ Architektura rozwoju
 
 2. Utwórz i aktywuj środowisko wirtualne:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   python3 -m venv venv          # macOS / Linux
+   source venv/bin/activate      # macOS / Linux
+
+   python -m venv venv           # Windows
+   .\venv\Scripts\Activate.ps1   # Windows
    ```
 
 3. Zainstaluj wymagane zależności Pythona:
@@ -148,7 +151,7 @@ Architektura rozwoju
 
 4. Uruchom serwer deweloperski:
    ```bash
-   python app.py
+   python .\Project\app.py
    ```
 
 5. Otwórz aplikację w przeglądarce:
