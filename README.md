@@ -123,7 +123,8 @@ Architektura rozwoju
 1. Python 3.x (rekomendowane 3.11)
 2. Narzędzie do tworzenia środowisk wirtualnych (np. venv lub virtualenv)
 3. Dostęp do internetu (pobieranie notowań z Bankier.pl)
-4. 
+
+
 ### Procedura instalacji
 1. Sklonuj repozytorium:
    ```bash
