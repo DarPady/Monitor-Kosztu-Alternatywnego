@@ -108,10 +108,11 @@ Architektura rozwoju
 
 | Technologia | Przeznaczenie | Nr wersji |
 |----|-------|------|
-|F-01|Definicja śledzonego produktu| Użytkownik musi mieć możliwość zdefiniowania nowego produktu/nawyku poprzez podanie: nazwy (np. "Papierosy"), jednostki miary (np. "paczka") oraz ceny jednostkowej.|1|
-|F-02|Edycja ceny produktu| Użytkownik musi mieć możliwość aktualizacji ceny produktu. System musi zachować historię cen, aby stare wpisy były przeliczane po starej cenie, a nowe po nowej.|1|
-|F-03|Zarządzanie listą produktów| Użytkownik może dodawać wiele niezależnych produktów (np. "Kawa", "Papierosy") i śledzić je równolegle.|1|
-|F-04|Edycja parametrów historycznych| Możliwość wpisania, jak długo użytkownik już posiada dany nawyk, aby obliczyć stratę "wsteczną".|3|
+|beautifulsoup4||4.14.3|
+|Flask||3.1.2|
+|Flask-Login||0.6.3|
+|Flask-SQLAlchemy||3.1.1|
+|requests||2.32.5|
 
     
 ---
